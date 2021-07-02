@@ -14,7 +14,7 @@ import java.util.List;
 public class RatingsDataResource {
     @RequestMapping("/{movieId}")
     public Rating getRating(@PathVariable("movieId") String movieId){
-        return new Rating(movieId,4);
+        return new Rating("2",4);
     }
 
     @RequestMapping("users/{userId}")
